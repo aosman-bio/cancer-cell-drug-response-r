@@ -104,6 +104,7 @@ pc9_summary <- pc9_final %>%
   summarise(
     Mean_Cell_Count = mean(cell.count),
     SD_Cell_Count = sd(cell.count),
+    Number_of_Wells = n(),
     .groups = "drop"
   )
 
@@ -111,6 +112,7 @@ pc9_summary <- pc9_final %>%
 # Calculate cell count relative to the lowest concentration
 
 pc9_summary <- pc9_summary %>%
+  arrange(drug1.conc) %>%
   mutate(
     Percent_of_lowest =
       (Mean_Cell_Count / first(Mean_Cell_Count)) * 100,
@@ -182,10 +184,10 @@ ggsave(
 # concentration and endpoint mean cell count.
 #
 # Spearman correlation is used because the relationship
-# is not clearly linear.
+# is not assumed to be linear.
 
 spearman_test <- cor.test(
-  log10(pc9_summary$drug1.conc),
+  pc9_summary$drug1.conc,
   pc9_summary$Mean_Cell_Count,
   method = "spearman"
 )
