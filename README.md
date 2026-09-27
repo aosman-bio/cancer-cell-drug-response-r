@@ -27,11 +27,11 @@ This is an exploratory biological data-analysis project rather than an attempt t
 
 ## Background
 
-Erlotinib is an epidermal growth factor receptor (EGFR) tyrosine kinase inhibitor used to investigate EGFR-dependent signalling and drug response in cancer cells (Chen et al., 2012).
+Erlotinib is an epidermal growth factor receptor (EGFR) tyrosine kinase inhibitor used to investigate EGFR-dependent signalling and drug response in cancer cells (Tabara et al., 2012).
 
-PC9 is an EGFR-mutant non-small-cell lung cancer (NSCLC) cell line that has been widely used as a model for studying responses to EGFR-targeted therapies. Previous research has demonstrated that PC9 cells harbour activating EGFR mutations and can show sensitivity to EGFR-targeted tyrosine kinase inhibitors such as erlotinib (Chen et al., 2012).
+PC9 is an EGFR-mutant non-small-cell lung cancer (NSCLC) cell line that has been widely used as a model for studying responses to EGFR-targeted therapies. Previous research has demonstrated that PC9 cells harbour activating EGFR mutations and can show sensitivity to EGFR-targeted tyrosine kinase inhibitors such as erlotinib (Tabara et al., 2012).
 
-The underlying dataset contains cell-count measurements derived from fluorescence microscopy of cancer cells expressing nuclear-localised fluorescent proteins. This allows cell counts to be measured repeatedly over time during drug exposure (Tyson et al., 2026; Harris et al., 2016).
+The underlying dataset contains cell-count measurements derived from fluorescence microscopy of cancer cells expressing nuclear-localised fluorescent proteins. This allows cell counts to be measured repeatedly over time during drug exposure (Tyson et al., 2026).
 
 Cell count provides a measure of cellular accumulation, but does not directly distinguish between reduced proliferation, increased cell death or other biological processes.
 
@@ -115,7 +115,7 @@ At the beginning of the experiment, cell counts were relatively similar across t
 
 As the experiment progressed, the concentration-specific trajectories began to separate, with lower cell counts observed at higher erlotinib concentrations during the later stages of the experiment. The separation became visually apparent at approximately 50 hours.
 
-The longitudinal pattern therefore suggested that the effect of increasing erlotinib concentration became more apparent as the experiment progressed.
+The longitudinal pattern therefore suggested that concentration-associated differences became more apparent as the experiment progressed.
 
 ### Endpoint response
 
@@ -203,4 +203,4 @@ The generated figures are saved in the `figures/` directory.
 
 * Harris LA, Frick PL, Garbett SP, Hardeman KN, Paudel BB, Lopez CF, Quaranta V, Tyson DR. (2016). An unbiased metric of antiproliferative drug effect in vitro. *Nature Methods*, 13(6), 497–500. DOI: 10.1038/nmeth.3852.
 
-* Chen et al. (2012). *Loss of activating EGFR mutant gene contributes to acquired resistance to EGFR tyrosine kinase inhibitors in lung cancer cells*.
+* Tabara, K., Kanda, R., Sonoda, K., Kubo, T., Murakami, Y., Kawahara, A., Azuma, K., Abe, H., Kage, M., Yoshinaga, A., Tahira, T., Hayashi, K., Arao, T., Nishio, K., Rosell, R., Kuwano, M., & Ono, M. (2012). Loss of activating EGFR mutant gene contributes to acquired resistance to EGFR tyrosine kinase inhibitors in lung cancer cells. PLoS ONE, 7(7), e41017. doi:10.1371/journal.pone.0041017
